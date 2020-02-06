@@ -1,9 +1,9 @@
-# 002-Team10
 <<<<<<< HEAD
-yeet
-=======
+# 002-Team10
 
 ## CSCI3010
 
 
->>>>>>> f4f13514c7560091e82540899386a8174eeb6caa
+=======
+# 002-Team10
+>>>>>>> parent of c0d847d... Update README.md
