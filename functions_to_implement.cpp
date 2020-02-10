@@ -55,7 +55,13 @@ int NthFibonacci(int n);
 int Factorial(int n);
 
 // returns -1 if the number is negative and 1 if positive
-int Sign(int num);
+int Sign(int num){
+    if(num < 0){
+        return -1;   
+    } else {
+        return 1;   
+    }
+}
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
@@ -77,7 +83,14 @@ std::vector<bool> GreaterMask(std::vector<int> nums, int greater_than);
 std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 
 // Sums all numbers in a vector and returns the resulting value
-double Sum(std::vector<double> nums);
+double Sum(std::vector<double> nums){
+    double sum = 0;
+    for(int i = 0; i < nums.size(); i++){
+        sum += nums[i];   
+    }
+    return sum;
+}
+
 
 // Multiplies all numbers in a vector together and returns the resulting value
 double Product(std::vector<double> nums);
