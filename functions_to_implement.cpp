@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+=======
+#include <vector>
+#include <string>
+
+>>>>>>> origin/master
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 
 /* String functions section */
+
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -64,6 +71,11 @@ int Sign(int num){
     } else {
         return 1;   
     }
+}
+
+TEST_CASE( "sign ", "[Sign]" ) {
+    REQUIRE( Sign(1) == 1 );
+    REQUIRE( Sign(-1) == -1 );
 }
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
