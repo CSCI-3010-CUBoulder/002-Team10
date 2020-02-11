@@ -67,7 +67,6 @@ int Sign(int num){
     }
 }
 
-=======
 TEST_CASE( "Sign function works", "[Sign]" ) {
     REQUIRE( Sign(1) == 1 );
     REQUIRE( Sign(-1) == -1 );
