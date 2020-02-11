@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
-=======
-#include <vector>
-#include <string>
->>>>>>> master
-
 /* String functions section */
-
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -64,18 +55,7 @@ int NthFibonacci(int n);
 int Factorial(int n);
 
 // returns -1 if the number is negative and 1 if positive
-int Sign(int num){
-    if(num < 0){
-        return -1;   
-    } else {
-        return 1;   
-    }
-}
-
-TEST_CASE( "Sign function works", "[Sign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign(-1) == -1 );
-}
+int Sign(int num);
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
@@ -97,14 +77,7 @@ std::vector<bool> GreaterMask(std::vector<int> nums, int greater_than);
 std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 
 // Sums all numbers in a vector and returns the resulting value
-double Sum(std::vector<double> nums){
-    double sum = 0;
-    for(unsigned int i = 0; i < nums.size(); i++){
-        sum += nums[i];   
-    }
-    return sum;
-}
-
+double Sum(std::vector<double> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 double Product(std::vector<double> nums);
@@ -137,14 +110,4 @@ std::vector<std::string> AddN(std::vector<std::string>, std::string n);
 std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
-<<<<<<< HEAD
 std::vector<double> SubtractN(std::vector<double>, double n);
-
-
-TEST_CASE( "Sign function works", "[wign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign (-1) == -1 );
-}
-=======
-std::vector<double> SubtractN(std::vector<double>, double n);
->>>>>>> master

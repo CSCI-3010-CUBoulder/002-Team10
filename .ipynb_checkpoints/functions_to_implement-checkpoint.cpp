@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
-=======
 #include <vector>
 #include <string>
->>>>>>> master
 
 /* String functions section */
 
@@ -72,11 +67,6 @@ int Sign(int num){
     }
 }
 
-TEST_CASE( "Sign function works", "[Sign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign(-1) == -1 );
-}
-
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
 std::vector<double> MatchVectors(std::vector<double> a, std::vector<double> b);
@@ -137,14 +127,4 @@ std::vector<std::string> AddN(std::vector<std::string>, std::string n);
 std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
-<<<<<<< HEAD
 std::vector<double> SubtractN(std::vector<double>, double n);
-
-
-TEST_CASE( "Sign function works", "[wign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign (-1) == -1 );
-}
-=======
-std::vector<double> SubtractN(std::vector<double>, double n);
->>>>>>> master
