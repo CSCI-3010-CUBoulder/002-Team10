@@ -1,3 +1,6 @@
+#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
+#include "catch.hpp"
+
 #include <vector>
 #include <string>
 
@@ -130,6 +133,3 @@ std::vector<std::string> AddN(std::vector<std::string>, std::string n);
 
 // subtracts n to each element of the vector
 std::vector<int> SubtractN(std::vector<int>, int n);
-
-// subtracts n to each element of the vector
-std::vector<double> SubtractN(std::vector<double>, double n);
