@@ -67,6 +67,14 @@ int Sign(int num){
     }
 }
 
+<<<<<<< HEAD
+=======
+TEST_CASE( "Sign function works", "[Sign]" ) {
+    REQUIRE( Sign(1) == 1 );
+    REQUIRE( Sign(-1) == -1 );
+}
+
+>>>>>>> ecedd7a12fd4e7a4f6ad69036903a455e446b6d3
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
 std::vector<double> MatchVectors(std::vector<double> a, std::vector<double> b);
