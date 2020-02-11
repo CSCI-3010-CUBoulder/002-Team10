@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
-=======
+
 #include <vector>
 #include <string>
->>>>>>> master
 
 /* String functions section */
 
@@ -135,16 +133,3 @@ std::vector<std::string> AddN(std::vector<std::string>, std::string n);
 
 // subtracts n to each element of the vector
 std::vector<int> SubtractN(std::vector<int>, int n);
-
-// subtracts n to each element of the vector
-<<<<<<< HEAD
-std::vector<double> SubtractN(std::vector<double>, double n);
-
-
-TEST_CASE( "Sign function works", "[wign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign (-1) == -1 );
-}
-=======
-std::vector<double> SubtractN(std::vector<double>, double n);
->>>>>>> master
