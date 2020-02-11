@@ -9,4 +9,9 @@ TEST_CASE( "sign ", "[Sign]" ) {
         REQUIRE( Sign(2) == 1 );
         REQUIRE( Sign(-2) == -1 );
     }
+    SECTION( "sign changed" ) {
+        REQUIRE( Sign(3) == 1 );
+        REQUIRE( Sign(-3) == -1 );
+    }
+
 }
