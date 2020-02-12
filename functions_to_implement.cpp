@@ -1,6 +1,3 @@
-#define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-#include "catch.hpp"
-
 #include <vector>
 #include <string>
 
@@ -70,11 +67,6 @@ int Sign(int num){
     }
 }
 
-TEST_CASE( "Sign function works", "[Sign]" ) {
-    REQUIRE( Sign(1) == 1 );
-    REQUIRE( Sign(-1) == -1 );
-}
-
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
 std::vector<double> MatchVectors(std::vector<double> a, std::vector<double> b);
@@ -117,9 +109,10 @@ std::vector<double> VectorTimesN(std::vector<double> v, double n);
 // values n*1, n*2, n*3... up to n*m
 std::vector<double> Multiples(double n, double m);
 
+/*
 // returns -1 if the number is negative and 1 if positive
 double Sign(double num);
-
+*/
 
 // adds n to each element of the vector
 std::vector<int> AddN(std::vector<int>, int n);
