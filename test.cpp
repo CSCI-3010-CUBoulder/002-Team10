@@ -1,6 +1,7 @@
 #include "catch.hpp"
-#include "functions_to_implement.cpp"
 #define CATCH_CONFIG_MAIN
+
+int Sign(int num);
 
 TEST_CASE( "sign ", "[Sign]" ) {
     REQUIRE( Sign(1) == 1 );
@@ -13,5 +14,4 @@ TEST_CASE( "sign ", "[Sign]" ) {
         REQUIRE( Sign(3) == 1 );
         REQUIRE( Sign(-3) == -1 );
     }
-
 }
